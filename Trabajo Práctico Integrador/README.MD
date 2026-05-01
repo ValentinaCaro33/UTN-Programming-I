@@ -1,70 +1,77 @@
-# Gestión de Países en Python
+# 🌍 World Country Management System (Python)
 
-## 📘 Descripción del Proyecto
-Este proyecto forma parte del **Trabajo Práctico Integrador** de la materia **Programación 1** de la **Tecnicatura Universitaria en Programación a Distancia (UTN)**.  
-El sistema implementa una **gestión de información sobre países del mundo** utilizando archivos **CSV** y operaciones **CRUD** completas.
+## 📘 Project Overview
+This project is the final integrated assignment for the Programming I course at the Universidad Tecnológica Nacional (UTN). It implements a comprehensive data management system for global country information using CSV persistence and full CRUD operations.
 
-### Objetivo General
-Desarrollar un programa funcional en Python que permita:
-- Agregar, consultar, actualizar y guardar información de países.
-- Aplicar algoritmos de ordenamiento y filtrado.
-- Calcular estadísticas descriptivas.
-- Validar datos, incluyendo la verificación de países reales (193 reconocidos por la ONU).
+### Core Features
 
----
+A functional Python application capable of:
 
-## 🏛️ Universidad y Cátedra
-**Universidad:** Universidad Tecnológica Nacional (UTN)  
-**Carrera:** Tecnicatura Universitaria en Programación a Distancia  
-**Materia:** Programación 1  
+- **Data Lifecycle:** Add, query, update, and persist country information.
 
-**Profesores:**
-- Titular: **Alberto Cortez**  
-- Comisión 3: **Brian Lara**  
-- Comisión 13: **Miguel Barrera**
+- **Algorithms:** Implementation of custom sorting and filtering algorithms.
+
+- **Data Science Basics:** Calculation of descriptive statistics and population trends.
+
+- **Validation:** Robust input handling, including verification against the 193 UN-recognized sovereign states.
 
 ---
 
-## 👥 Integrantes
-- **Valentina Caro** – Comisión 3  
-- **Leonardo Stamile** – Comisión 13  
+## 🏛️ Academic Context
+**University:** Universidad Tecnológica Nacional (UTN)
 
-**Fecha de entrega:** 11 de noviembre de 2025
+**Program:** University Technician in Programming
+
+**Course:** Programming I
+
+**Teaching Staff:**
+
+- **Head Professor:** Alberto Cortez
+
+- **Assistant Professors:** Brian Lara, Miguel Barrera
 
 ---
 
-## 🧱 Estructura del Proyecto
+## 👥 Contributors
+- **Valentina Caro** – Section 3  
+- **Leonardo Stamile** – Section 13  
+
+**Completion Date:** November 11, 2025
+
+---
+
+## 🧱 Project Structure
 ```
-tpi_paises.py           # Script principal con todas las funciones del programa
-paises.csv              # Archivo CSV con los datos (se crea o modifica automáticamente)
-README.md               # Documento descriptivo del proyecto
+tpi_paises.py           # Main script containing application logic
+paises.csv              # CSV database (automatically generated/updated)
+README.md               # Project documentation
 ```
 
-El programa utiliza una estructura modular con funciones especializadas para cada operación:
-- Validaciones: `texto_no_vacio()`, `es_entero_positivo()`, `pais_esta_permitido()`
-- CRUD: `agregar_pais()`, `actualizar_pais()`, `buscar_por_nombre()`
-- Filtrado: `filtrar_por_continente()`, `filtrar_por_rango_poblacion()`, `filtrar_por_rango_superficie()`
-- Ordenamiento: `ordenar_por_nombre()`, `ordenar_por_poblacion()`, `ordenar_por_superficie()`
-- Persistencia CSV: `cargar_desde_csv()`, `guardar_a_csv()`
-- Estadísticas: `estadisticas()`
+The application follows a modular architecture with specialized functions:
+- Validations: `texto_no_vacio()`, `es_entero_positivo()`, `pais_esta_permitido()`
+- CRUD operations: `agregar_pais()`, `actualizar_pais()`, `buscar_por_nombre()`
+- Data Filtering: `filtrar_por_continente()`, `filtrar_por_rango_poblacion()`, `filtrar_por_rango_superficie()`
+- Sorting Engines: `ordenar_por_nombre()`, `ordenar_por_poblacion()`, `ordenar_por_superficie()`
+- Persistence: `cargar_desde_csv()`, `guardar_a_csv()`
+- Analytics: `estadisticas()`
 
 ---
 
-## ⚙️ Instrucciones de Ejecución
+## ⚙️ Execution Instructions
 
-1. **Clonar el repositorio:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/usuario/tpi_paises.git
    cd tpi_paises
    ```
 
-2. **Ejecutar el programa:**
+2. **Run the application:**
    ```bash
    python tpi_paises.py
    ```
 
-3. **Interfaz de menú:**
-   Al iniciar, el programa mostrará un menú interactivo con las siguientes opciones:
+3. **Interactive Menu:**
+   The system features a CLI (Command Line Interface) with 12 specialized options for data manipulation and reporting:
    ```
    1) Cargar países desde CSV
    2) Guardar países a CSV
@@ -83,64 +90,20 @@ El programa utiliza una estructura modular con funciones especializadas para cad
 
 ---
 
-## 🎥 Enlaces
-- **Video explicativo:** [🔗 Enlace al video](https://youtu.be/CKHOuVgVxBQ?si=P1lqfzrKfjqCsUiD)
-- **Repositorio GitHub:** [🔗 Enlace al repositorio](https://github.com/ValentinaCaro33/UTN-TUPaDProgramacion1/tree/8fae231adead7e060203dd315f179c1cce77c6ac/Trabajo%20Pr%C3%A1ctico%20Integrador)
+## 🎥 Media & Resources
+- **Explainer Video:** [🔗 Enlace al video](https://youtu.be/CKHOuVgVxBQ?si=P1lqfzrKfjqCsUiD)
+- **Source Code:** [🔗 Enlace al repositorio](https://github.com/ValentinaCaro33/UTN-Programming-I/tree/8fae231adead7e060203dd315f179c1cce77c6ac/Trabajo%20Pr%C3%A1ctico%20Integrador)
 
 
 ---
 
-## 💻 Ejemplo de Entrada y Salida
-
-### Ejemplo de entrada (al agregar países)
-```
-Nombre: Argentina
-Población: 45376763
-Superficie: 2780400
-Continente: América
-```
-
-### Ejemplo de salida
-```
-País agregado correctamente.
-```
-
-### Ejemplo de filtrado
-```
-Opción: 6
-Continente: Europa
-```
-
-**Salida:**
-```
-Nombre: Alemania | Población: 83149300 | Superficie: 357022 | Continente: Europa
-Nombre: Italia | Población: 59550000 | Superficie: 301340 | Continente: Europa
-Nombre: Suiza | Población: 8717000 | Superficie: 41285 | Continente: Europa
-```
+## 🧩 🧩 Technologies Used
+- **Language:** Python 3.10+
+- **Storage:** Flat-file CSV
+- **Paradigm:** Structured & Modular Programming
+- **Standard Library:** `os`,`csv` 
 
 ---
 
-## 📊 Ejemplo de Estadísticas
-```
-País con mayor población: Brasil (213993437)
-País con menor población: Suiza (8717000)
-Promedio de población: 86,234,828.57
-Promedio de superficie: 2,335,057.0
-Cantidad de países por continente:
-  - América: 2
-  - Europa: 3
-  - Asia: 1
-```
-
----
-
-## 🧩 Tecnologías Utilizadas
-- **Lenguaje:** Python 3.10+
-- **Formato de datos:** CSV
-- **Paradigma:** Programación estructurada y modular
-- **Bibliotecas estándar:** `os`
-
----
-
-## 🧾 Licencia
-Este proyecto fue desarrollado con fines académicos para la UTN y no posee licencia de distribución comercial.
+## 🧾 License
+This project was developed for academic purposes at UTN. All rights reserved by the authors for the original implementation.
