@@ -1,15 +1,21 @@
-# 💻 Programación 1  
-**Tecnicatura Universitaria en Programación**  
-📍 *Universidad Tecnológica Nacional*  
+# 💻 Programming I (UTN) 
+**University Technician in Programming**  
+📍 *Universidad Tecnológica Nacional (FRSN)*  
 
-## ✨ Estudiante  
-- **Nombre:** Caro, Valentina 
-- **Comisión:** Ag25-1C-03
+## ✨ Student  
+- **Name:** Valentina Caro  
+- **Cohort:** 2025-2026
 
-## 📂 Descripción del Repositorio  
-Este repositorio almacena todas los trabajos prácticos realizados durante la cursada de **Programación 1**.  
+## 📂 Repository Description  
+This repository contains the coursework and projects completed during the **Programming I** course.  
 
-📌 **Estructura del repositorio:**  
-- Cada trabajo está organizado en carpetas individuales.  
-- Los archivos de código fuente (`.py`) incluyen comentarios y estructura adecuada.  
-- Se busca mantener un código limpio, ordenado y bien documentado.  
+📌 **Project Structure:**  
+- **Labs:** Individual folders containing weekly assignments and logic exercises.
+- **Final Project:** A comprehensive implementation applying all concepts learned throughout the semester.
+- **Stack:** Python 3.x
+
+## 🚀 Key Learning Outcomes  
+- Foundational logic and algorithmic thinking.
+- Data structures (Lists, Dictionaries, Tuples).
+- Clean code principles and modular programming.
+- File handling and basic system architecture.
